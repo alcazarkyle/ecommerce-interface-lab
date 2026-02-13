@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout & Shipping</title>
+</head>
+<body>
+
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Shipping Information</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Shipping Address</legend>
+
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br><br>
+
+                    <label for="street">Street Address:</label><br>
+                    <input type="text" id="street" name="street"><br><br>
+
+                    <label for="zipcode">Zip Code:</label><br>
+                    <input type="text" id="zipcode" name="zipcode"><br><br>
+
+                </fieldset>
+            </form>
+        </section>
+
+        
+        <section>
+            <h2>Payment Method</h2>
+
+          
+            <form>
+
+                <label>
+                    <input type="radio" name="payment" value="creditcard">
+                    Credit Card
+                </label><br>
+
+                <label>
+                    <input type="radio" name="payment" value="paypal">
+                    PayPal
+                </label><br><br>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <aside>
+        <h2>Order Summary</h2>
+        <p>Items Total: $109.97</p>
+        <p>Shipping Fee: $10.00</p>
+        <p>Tax: $5.00</p>
+        <h3>Final Total: $124.97</h3>
+    </aside>
+
+</body>
+</html>
