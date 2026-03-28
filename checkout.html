@@ -2,67 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Checkout & Shipping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | ShopEase</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="products.html?category=clothing">Clothing</a></li>
+                <li><a href="products.html?category=electronics">Electronics</a></li>
+                <li><a href="products.html?category=books">Books</a></li>
+                <li><a href="products.html?category=sale">Sale</a></li>
+                <li><a href="cart.html">Cart</a> <span id="cart-count"></span></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <h1>Checkout</h1>
 
+    <div>
         <section>
-            <h2>Shipping Information</h2>
-
-            <form>
+            <fieldset>
+                <legend>Shipping Address</legend>
+    <div class="checkout-container">
+        <div class="checkout-form">
+            <form id="checkout-form">
                 <fieldset>
                     <legend>Shipping Address</legend>
-
-                    <label for="fullname">Full Name:</label><br>
-                    <input type="text" id="fullname" name="fullname"><br><br>
-
-                    <label for="street">Street Address:</label><br>
-                    <input type="text" id="street" name="street"><br><br>
-
-                    <label for="zipcode">Zip Code:</label><br>
-                    <input type="text" id="zipcode" name="zipcode"><br><br>
-
+                    
+                    <label for="name">Full name:</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="street">Street address:</label>
+                    <input type="text" id="street" name="street">
+                    
+                    <label for="zip">ZIP / Postal code:</label>
+                    <input type="text" id="zip" name="zip">
                 </fieldset>
-            </form>
-        </section>
 
+                <label for="name">Full name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <fieldset>
+                    <legend>Payment Method</legend>
+                    
+                    <label><input type="radio" name="payment" value="credit"> Credit Card</label><br>
+                    <label><input type="radio" name="payment" value="paypal"> PayPal</label><br>
+                    <label><input type="radio" name="payment" value="bank"> Bank Transfer</label><br>
+                </fieldset>
+
+                <label for="street">Street address:</label><br>
+                <input type="text" id="street" name="street"><br><br>
+                
+                <label for="zip">ZIP / Postal code:</label><br>
+                <input type="text" id="zip" name="zip"><br>
+            </fieldset>
+        </section>
         
         <section>
-            <h2>Payment Method</h2>
-
-          
-            <form>
-
-                <label>
-                    <input type="radio" name="payment" value="creditcard">
-                    Credit Card
-                </label><br>
-
-                <label>
-                    <input type="radio" name="payment" value="paypal">
-                    PayPal
-                </label><br><br>
-
-                <button type="submit">Place Order</button>
-
-            </form>
+            <fieldset>
+                <legend>Payment Method</legend>
+                
+                <label><input type="radio" name="payment" value="credit"> Credit Card</label><br>
+                <label><input type="radio" name="payment" value="paypal"> PayPal</label><br>
+                <label><input type="radio" name="payment" value="bank"> Bank Transfer</label><br>
+            </fieldset>
         </section>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
 
-    </main>
+        <a href="account.html"><button>Place Order</button></a>
+        <aside class="order-summary">
+            <h2>Order Summary</h2>
+            <div id="order-items-list"></div>
+            <hr>
+            <p>Subtotal: $<span class="items-total">0.00</span></p>
+            <p>Shipping: $<span class="shipping-cost">0.00</span></p>
+            <p><strong>Total: $<span class="total-amount">0.00</span></strong></p>
+        </aside>
+    </div>
 
     <aside>
         <h2>Order Summary</h2>
-        <p>Items Total: $109.97</p>
-        <p>Shipping Fee: $10.00</p>
-        <p>Tax: $5.00</p>
-        <h3>Final Total: $124.97</h3>
+        <p>Items (3): $124.97</p>
+        <p>Shipping: $4.99</p>
+        <p><strong>Total: $129.96</strong></p>
     </aside>
-
+    
+    <hr>
+    <footer>
+        <p><a href="cart.html">← Back to cart</a> | <a href="products.html">Continue shopping</a> | <a href="account.html">My Account</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+
