@@ -2,68 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | ShopEase</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <nav>
             <ul>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="detail.html">Detail</a></li>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="products.html">Clothing</a></li>
+                <li><a href="products.html">Electronics</a></li>
+                <li><a href="products.html">Books</a></li>
+                <li><a href="products.html">Sale</a></li>
                 <li><a href="cart.html">Cart</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="product.html">Clothing</a></li>
+                <li><a href="product.html">Electronics</a></li>
+                <li><a href="product.html">Books</a></li>
+                <li><a href="product.html">Sale</a></li>
+                <li><a href="cart.html">Cart</a> <span id="cart-count"></span></li>
                 <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
-        <h1>Welcome to Our Store</h1>
-        <p>Discover the best products at affordable prices.</p>
-        <button>Shop Now</button>
+    <section class="hero-section">
+        <h1>Summer Essentials</h1>
+        <p>Fresh styles, zero worries. Up to 40% off.</p>
+        <a href="products.html"><button>Shop Now</button></a>
     </section>
 
     <section>
         <h2>Featured Products</h2>
-
         <article>
-            <h3>Product 1</h3>
-            <p>Price: $49.99</p>
+            <h3>Bluetooth Speaker</h3>
+            <p>$45.00</p>
+            <a href="detail.html">View details</a>
         </article>
-
         <article>
-            <h3>Product 2</h3>
-            <p>Price: $59.99</p>
+            <h3>Fitness Tracker</h3>
+            <p>$89.00</p>
+            <a href="detail.html">View details</a>
         </article>
-
         <article>
-            <h3>Product 3</h3>
-            <p>Price: $39.99</p>
+            <h3>Tablet Stand</h3>
+            <p>$29.00</p>
+            <a href="detail.html">View details</a>
         </article>
+        <div class="product-grid" id="featured-products"></div>
     </section>
 
     <section>
         <h2>Discounted Products</h2>
-
         <article>
-            <h3>Product 4</h3>
-            <p>Discounted Price: $29.99</p>
-            <p>Original Price: $49.99</p>
+            <h3>Hooded Sweatshirt</h3>
+            <p>Was $59.99, now $41.99</p>
+            <a href="detail.html">View details</a>
         </article>
-
         <article>
-            <h3>Product 5</h3>
-            <p>Discounted Price: $19.99</p>
-            <p>Original Price: $39.99</p>
+            <h3>Wireless Mouse</h3>
+            <p>Was $34.99, now $24.99</p>
+            <a href="detail.html">View details</a>
         </article>
-
-        <article>
-            <h3>Product 6</h3>
-            <p>Discounted Price: $24.99</p>
-            <p>Original Price: $44.99</p>
-        </article>
+        <div class="product-grid" id="discounted-products"></div>
     </section>
 
+    <hr>
+    <footer>
+        <p><a href="account.html">My Account</a> | <a href="cart.html">Shopping Cart</a> | <a href="signup.html">Sign Up</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
